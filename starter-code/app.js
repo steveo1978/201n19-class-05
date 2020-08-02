@@ -119,7 +119,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+var multi1 = multiply(multArr[0], multArr[1])[0];
+var multi2 = multiply(multi1, multArr[2])[0]; 
+console.log(multi2);
+var multiString = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${multi2}.`;
+return[multi2, multiString];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
